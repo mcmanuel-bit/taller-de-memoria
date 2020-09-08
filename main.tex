@@ -1,0 +1,92 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{listings}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{cite}
+
+\begin{document}
+
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1cm}
+            
+        \Huge
+        \textbf{DISPOSITIVOS ÚTILES DE ALMACENAMIENTO EN UN SISTEMA DE COMPUTO}
+            
+        \vspace{0.5cm}
+        \LARGE
+            
+        \vspace{1.5cm}
+            
+        \textbf{Manuel Cristobal Moreno Lizcano}
+            
+        \vfill
+            
+        \vspace{0.8cm}
+            
+        \Large
+        Despartamento de Ingeniería Electrónica y Telecomunicaciones\\
+        Universidad de Antioquia\\
+        Medellín\\
+        Septiembre de 2020
+            
+    \end{center}
+\end{titlepage}
+
+\tableofcontents
+
+\section{Sección introductoria}
+
+Para entender la forma en la se almacenan datos en un equipo de cómputo, la razón por la cual podemos visualizar por medio de una pantalla cualquier tipo de archivo, escuchar música o jugar en línea es necesario conocer la memoria que se encuentran dentro de un computador como lo es la CACHE, la RAM o la ROM. A continuación, hablaremos de algunos tipos de memoria y su funcionalidad. 
+
+\section{Sección de contenido} \label{contenido}
+\textbf{¿que es la memoria del computador?}
+\\[2ex]
+Es un dispositivo que tiene la capacidad de almacenar cualquier tipo datos informático, se pueden encontrar memoria que permiten almacenar datos temporalmente o de forma permanente
+\\[2ex]
+
+\textbf{¿Memoria Electrónicas Volátiles?}
+\\[2ex]
+\textbf{RAM:}dispositivo que permite almacenar datos de manera aleatoria, guardando temporalmente los datos hasta que estos dejan de ser útil
+
+\textbf{DRAM:}dispositivo que permite almacenar datos de manera aleatoria dinámicamente, necesitando de un circuito dinámico de refresco que, cada cierto periodo, revisa dicha carga y la pone en un ciclo de refresco
+\\[2ex]
+\textbf{Memoria Electrónicas no Volátiles}
+\\[2ex]
+\textbf{ROM:}Es un dispositivo que permite guardar información de forma predeterminado, es conocido popularmente, ya que es el que se encarga de realizar el ´POST (power-on Self-Test- Auto prueba de encendido en nuestras computadoras), una vez guardad esta información ya no se puede reprogramar, ni borrar
+
+\textbf{EPROM:}Es un dispositivo que permite guardar información, pero a diferencia de la ROM, esta puede ser programable y borrable
+
+\textbf{NVRAM:}es un depósito que guarda información de forma aleatoria pero no volátil, permitiendo guardar datos, después de que se quita la energía a un dispositivo 
+
+\textbf{DISCO DURO:}Es un dispositivo de almacenamiento de datos que emplea un sistema de grabación magnético para almacenar y recuperar datos informáticos
+
+\textbf{CD:}Es un disco óptico utilizado para almacenar cualquier tipo datos de forma digital, solo es de lectura una vez grabada su información
+\\[2ex]
+\textbf{¿como se gestiona la memoria en un computador?}
+\\[2ex]
+Presente en las computadoras, se basa en un sistema binario, que guarda o no guarda datos informáticos. La memoria en nuestro sistema de cómputo está dividida en tres tipos de memoria; CPU, RAM o la ROM, la manera en que se gestiona depende de si es volátil o no volátil. Pero su fin independientemente de que sea volátil o no volátil es poder cargar información, que necesita la CPU cada vez que realizamos una petición o que los periféricos de entrada o salida le soliciten. Un ejemplo claro es cuando damos clic a un archivo, esa instrucción enviada por pulsos eléctricos viajan por una línea de circuito llamada buses, hasta llegar a la CPU la cual envía la petición al disco duro que es donde se encuentra dicho archivo, una vez obtenido el dato procede a enviarlo a la memoria(RAM) la cual guarda la información temporalmente, dicha memoria tiene el archivo pero envía esos datos nuevamente al procesador y este envía la información a un periférico de salida como lo es el monitor el cual nos permite visualizar el archivo solicitado.
+\\[2ex]
+\textbf{¿Qué hace que una memoria sea más rápida que otra?}
+\\[2ex]
+la forma en como está fabricada es el motivo para que una memoria sea más rápida que otra. Hay dos principios que permiten una mayor velocidad:
+\textbf{El ancho de bus:}(líneas de circuitos impresos) permiten marcar la capacidad para transferir mayores bloques de datos desde la memoria a la CPU por ende al ser líneas de circuitos eléctricos mas cortas va hacer mucho más rápido
+\textbf{La latencia:}:(tiempo que se tarda en acceder a los datos desde la memoria en nanosegundos) Mientras más lejos y más lenta, mayor latencia y más tiempo tendrá que esperar la CPU su siguiente instrucción. Así cuando una instrucción no está situada en la memoria caché, el procesador debe buscarla directamente en la memoria RAM, a esto se le denomina falta de caché o caché miss, es entonces cuando se experimenta un PC más lento.
+\\[2ex]
+\textbf{¿Por qué esto es importante??}
+\\[2ex]
+Esta velocidad es importante, ya que nos permite generar varios procesos a la misma vez como es el caso, cuando estamos jugando un vídeo juego y a la misma vez estamos en una red social, tenemos un editor de texto abierto y escuchamos música. 
+
+
+
+\section{Conclusión} \label{conclulsion}
+
+Gracias al funcionamiento de las memorias, podemos entender como funciona un equipo cada vez que requerimos algún dato informático y las causas que hacen que dichos equipos sean más rápidos o lentos.
+
+\cite{patterson2000estructura}
+\bibliographystyle{plain}
+\bibliography{references.bib}
+
+\end{document}
